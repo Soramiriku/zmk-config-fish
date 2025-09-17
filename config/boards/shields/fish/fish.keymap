@@ -165,8 +165,8 @@
             bindings = <
                         &kp L       &kp U       &kp F       &kp MINUS           &kp K       &kp W       &kp R       &kp Y       
 &kp Q       &kp E       &kp I       &kp A       &kp O       &kp COMMA           &kp G       &kp T       &kp N       &kp S       &kp H       &tog 7      
-            &kp Z       &kp X       &kp C       &kp V                                       &kp D       &kp M       &kp J       &kp B       
-                                                &kp P       &mo 1               &none       &none       
+            &lt 1 Z     &kp X       &kp C       &kp V                                       &kp D       &kp M       &kp J       &kp B       
+                                                &kp P       &mkp MB1            &none       &none       
             >;
         };
 
