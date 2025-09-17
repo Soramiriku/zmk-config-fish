@@ -166,16 +166,16 @@
                         &kp L       &kp U       &kp F       &kp MINUS           &kp K       &kp W       &kp R       &kp Y       
 &kp Q       &kp E       &kp I       &kp A       &kp O       &kp COMMA           &kp G       &kp T       &kp N       &kp S       &kp H       &tog 7      
             &kp Z       &kp X       &kp C       &kp V                                       &kp D       &kp M       &kp J       &kp B       
-                                                &kp P       &lt 1 RET           &kp TAB     &lt 2 SPACE 
+                                                &kp P       &mo 8               &kp TAB     &lt 2 SPACE 
             >;
         };
 
         layer_extra_2 {
             bindings = <
-                        &none       &none       &none       &none               &none       &none       &none       &none       
-&none       &none       &none       &none       &none       &none               &none       &none       &none       &none       &none       &none       
-            &none       &none       &none       &none                                       &none       &none       &none       &none       
-                                                &none       &none               &none       &none       
+                        &kp N1      &kp N2      &kp N3      &none               &none       &none       &none       &none       
+&none       &none       &kp N4      &kp N5      &kp N6      &none               &none       &none       &none       &none       &none       &none       
+            &none       &kp N7      &kp N8      &kp N9                                      &none       &none       &none       &none       
+                                                &none       &trans              &none       &none       
             >;
         };
 
