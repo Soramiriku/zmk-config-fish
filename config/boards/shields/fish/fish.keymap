@@ -46,7 +46,7 @@
     };
 
     macros {
-    ip_macro: ip_macro {
+    ib_macro: ib_macro {
         compatible = "zmk,behavior-macro";
         #binding-cells = <0>;
 
@@ -57,11 +57,11 @@
             /* i をタップ */
             &kp I
 
-            /* 150ms（0.15秒）待つ */
-            &macro_wait_time 150
+            /* 125ms（0.125秒）待つ */
+            &macro_wait_time 125
 
-            /* p をタップ */
-            &kp P
+            /* b をタップ */
+            &kp B
         >;
     };
 };
@@ -199,10 +199,10 @@
 
         layer_extra_3 {
             bindings = <
-                        &ip_macro   &kp U       &kp F       &kp MINUS           &kp G       &kp W       &kp R       &kp Y       
-&kp Q       &kp E       &kp I       &kp A       &kp O       &kp COMMA           &kp K       &kp T       &kp N       &kp S       &kp H       &tog 9      
+                        &kp L       &kp U       &kp F       &kp MINUS           &kp K       &kp W       &kp R       &kp Y       
+&kp Q       &kp E       &ib_macro   &kp A       &kp O       &kp COMMA           &kp G       &kp T       &kp N       &kp S       &kp H       &tog 9      
             &kp Z       &kp X       &kp C       &kp V                                       &kp D       &kp M       &kp J       &kp B       
-                                                &kp P       &mo 8                &kp RET     &kp BSPC    
+                                                &kp P       &mo 8               &kp RET     &kp BSPC    
             >;
         };
     };
