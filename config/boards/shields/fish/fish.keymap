@@ -50,21 +50,23 @@
         compatible = "zmk,behavior-macro";
         #binding-cells = <0>;
 
-        /* i の直後は待ち時間なし */
-        wait-ms = <0>;
+        /* 公式推奨の最低待ち時間 */
+        wait-ms = <30>;
+        tap-ms  = <30>;
 
         bindings = <
             /* i をタップ */
             &kp I
 
-            /* 125ms（0.125秒）待つ */
-            &macro_wait_time 125
+            /* 100ms 待つ */
+            &macro_wait_time 100
 
             /* b をタップ */
             &kp B
         >;
     };
 };
+
 
     conditional_layers {
     };
