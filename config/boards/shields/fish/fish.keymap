@@ -46,7 +46,25 @@
     };
 
     macros {
+    ip_macro: ip_macro {
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+
+        /* i の直後は待ち時間なし */
+        wait-ms = <0>;
+
+        bindings = <
+            /* i をタップ */
+            &kp I
+
+            /* 150ms（0.15秒）待つ */
+            &macro_wait_time 150
+
+            /* p をタップ */
+            &kp P
+        >;
     };
+};
 
     conditional_layers {
     };
@@ -181,10 +199,10 @@
 
         layer_extra_3 {
             bindings = <
-                        &kp L       &kp U       &kp F       &kp MINUS           &kp G       &kp W       &kp R       &kp Y       
+                        &ip_macro   &kp U       &kp F       &kp MINUS           &kp G       &kp W       &kp R       &kp Y       
 &kp Q       &kp E       &kp I       &kp A       &kp O       &kp COMMA           &kp K       &kp T       &kp N       &kp S       &kp H       &tog 9      
             &kp Z       &kp X       &kp C       &kp V                                       &kp D       &kp M       &kp J       &kp B       
-                                                &kp P       &kp R               &kp RET     &kp BSPC    
+                                                &kp P       &mo 8                &kp RET     &kp BSPC    
             >;
         };
     };
