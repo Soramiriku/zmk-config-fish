@@ -190,7 +190,7 @@
 
         layer_extra_4 {
             bindings = <
-                        &trans      &trans      &trans      &trans              &trans      &trans      &trans      &trans      
+                        &trans      &trans      &trans      &trans              &trans      &trans      &trans      &kp SPACE   
 &trans      &trans      &kp A       &kp S       &kp D       &trans              &trans      &kp J       &kp I       &kp O       &kp L       &tog 10     
             &trans      &trans      &trans      &trans                                      &kp U       &trans      &trans      &trans      
                                                 &kp W       &trans              &trans      &trans      
